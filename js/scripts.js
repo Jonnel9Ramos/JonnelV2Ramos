@@ -26,5 +26,5 @@ function convertir(){
 }
 
 function cambiarproducto(){
-    document.getElementByClassName(card-img-top mb-5 mb-md-0).src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU0kGSaH9nFGYKf2V409RZ82YDMAhGE5ooVEYZwx0nElHToGTW3V8Fpg&s=10";
+    document.getElementByClassName(card-img-top mb-5 mb-md-0)[0].src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU0kGSaH9nFGYKf2V409RZ82YDMAhGE5ooVEYZwx0nElHToGTW3V8Fpg&s=10";
 }
