@@ -7,8 +7,8 @@
 // Use this file to add JavaScript to your project
 
 function calcular(){
-    let largo = document.getElementById("largo").value;
-    let ancho = document.getElementById("ancho").value;
+    let largo = number(document.getElementById("largo")).value;
+    let ancho = number(document.getElementById("ancho")).value;
     
     let area = largo * ancho;
     let perimetro = 2 * (largo + ancho);
@@ -17,10 +17,14 @@ function calcular(){
 }
 
 function convertir(){
-    let dolares = document.getElementById("dolares").value;
-    let tasa = document.getElementById("tasa").value;
+    let dolares = number(document.getElementById("dolares")).value;
+    let tasa = number(document.getElementById("tasa")).value;
 
     let resultado = dolares * tasa;
     
     alert("El equivalente en moneda local es: S/." + resultado);
+}
+
+function cambiarproducto(){
+    document.getElementByClassName(card-img-top mb-5 mb-md-0).src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU0kGSaH9nFGYKf2V409RZ82YDMAhGE5ooVEYZwx0nElHToGTW3V8Fpg&s=10";
 }
