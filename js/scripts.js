@@ -7,8 +7,8 @@
 // Use this file to add JavaScript to your projec
 
 function calcular(){
-    let largo = number(document.getElementById("largo")).value;
-    let ancho = number(document.getElementById("ancho")).value;
+    let largo = Number(document.getElementById("largo")).value;
+    let ancho = Number(document.getElementById("ancho")).value;
     
     let area = largo * ancho;
     let perimetro = 2 * (largo + ancho);
@@ -17,8 +17,8 @@ function calcular(){
 }
 
 function convertir(){
-    let dolares = number(document.getElementById("dolares")).value;
-    let tasa = number(document.getElementById("tasa")).value;
+    let dolares = Number(document.getElementById("dolares")).value;
+    let tasa = Number(document.getElementById("tasa")).value;
 
     let resultado = dolares * tasa;
     
