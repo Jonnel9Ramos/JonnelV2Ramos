@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | EducaTech</title>
+  <meta name="description" content="Regístrate en EducaTech y recibe información sobre nuestros cursos de tecnología.">
+  <link rel="stylesheet" href="css/stylesET.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">ET</div>
+        <div class="logo-text">
+          <h1>EducaTech</h1>
+          <span>Institución Técnica Superior</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="EducaTech.html" class="active">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="index.html">Colaborador</a>
+        <a href="registro.html" class="btn-registro">Registro</a>>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="form-section">
+          <div class="form-card">
+            <h2>Registro de interesados</h2>
+            <p>Completa el formulario y te contactaremos con información sobre el curso que te interesa.</p>
+
+            <form id="formularioRegistro" novalidate>
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Pérez" autocomplete="name">
+                <div class="error-msg"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email">
+                <div class="error-msg"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Solo números, mín. 7 dígitos" autocomplete="tel">
+                <div class="error-msg"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="curso">Curso de interés</label>
+                <select id="curso" name="curso">
+                  <option value="">Selecciona un curso</option>
+                  <option value="frontend">Desarrollo Web Frontend</option>
+                  <option value="backend">Desarrollo Web Backend</option>
+                  <option value="python">Programación con Python</option>
+                  <option value="ia">Inteligencia Artificial</option>
+                  <option value="datos">Ciencia de Datos</option>
+                  <option value="ciberseguridad">Ciberseguridad</option>
+                  <option value="uxui">Diseño UX/UI</option>
+                  <option value="movil">Desarrollo Móvil</option>
+                  <option value="cloud">Cloud Computing & DevOps</option>
+                </select>
+                <div class="error-msg"></div>
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos">Acepto recibir información de EducaTech sobre cursos y novedades.</label>
+              </div>
+
+              <button type="submit" class="btn-submit">Registrar interés</button>
+
+              <div id="mensajeForm" class="form-message" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>EducaTech</h3>
+        <p>Educación y tecnología para el futuro. Formamos a la próxima generación de profesionales digitales.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="EducaTech.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="index.html">Colaborador</a></li>
+          <li><a href="registro.html">Registro</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>info@educatech.com</p>
+        <p>+1 (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EducaTech. Todos los derechos reservados. Proyecto conceptual.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
